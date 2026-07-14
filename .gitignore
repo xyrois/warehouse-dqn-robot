@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environment
+venv/
+.venv/
+env/
+ENV/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Project-generated artifacts
+# Trained model weights (regenerate with train.py)
+models/*.pth
+
+# Raw training history arrays (regenerate with train.py or
+# utils/visualization.py). PNG plots are intentionally not ignored
+plots/*.npy
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Jupyter (if notebooks are ever added)
+.ipynb_checkpoints/
