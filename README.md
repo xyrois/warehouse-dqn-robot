@@ -6,6 +6,11 @@ A Deep Q-Network (DQN) agent that learns to navigate a randomly generated
 
 ## Overview
 
+This project is a continuation of an earlier
+[tabular Q-learning warehouse robot](https://github.com/xyrois/warehouse-RL)
+, the same task, now solved with a Deep Q-Network instead of a Q-table, to
+handle a much larger and more varied state space.
+
 The agent controls a robot on a grid containing walls, a package, and a
 delivery point. On each step it can move up, down, left, or right. Its goal
 is to reach the package, pick it up, and carry it to the delivery point
@@ -177,7 +182,7 @@ NUM_FIXED_MAPS = None   # fully random map every episode
 
 The idea: verify the DQN can learn navigation at all on a fixed map, then
 gradually widen the pool of maps it has to handle, before finally testing
-it on fully random, never-seen-before layouts.
+it on fully random layouts.
 
 ## Notes on training
 
@@ -208,7 +213,7 @@ episodes, with loss converging to a small, stable value. This validates
 the DQN implementation itself.
 
 Generalization across a wider pool of maps (5, then 20, then fully random)
-is the current in-progress milestone — results will be updated here as
+is the current in-progress milestone, results will be updated here as
 that training completes.
 
 ## Future improvements
